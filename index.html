@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Residência Contemporânea</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header" id="topo">
+    <div class="header-inner">
+      <a href="#topo" class="header-logo" aria-label="Início">Residência</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </button>
+      <nav class="header-nav" id="menu-principal" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#abertura">Abertura</a></li>
+          <li><a href="#conceito">Conceito</a></li>
+          <li><a href="#convivencia">Convivência</a></li>
+          <li><a href="#materiais">Materiais</a></li>
+          <li><a href="#integracao">Integração</a></li>
+          <li><a href="#informacoes">Informações</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+
+    <!-- Camadas: vídeo → overlay → seções (cabeçalho acima) -->
+    <div class="video-backdrop" aria-hidden="true">
+      <div class="video-slot" role="presentation">
+        <video
+          class="immersive-video"
+          data-src="/videos/video-completo.mp4"
+          muted
+          playsinline
+          preload="none"
+          tabindex="-1"
+        ></video>
+      </div>
+      <div class="video-overlay" role="presentation"></div>
+    </div>
+
+    <div class="immersive-experience">
+
+    <!-- 1. Abertura — centralizada -->
+    <section class="section section--video section--center" id="abertura" aria-labelledby="titulo-abertura">
+      <div class="section-inner">
+        <div class="content-block content-block--center">
+          <p class="eyebrow">Residência Contemporânea</p>
+          <h1 class="display-title" id="titulo-abertura">Uma presença<br>silenciosa</h1>
+          <p class="lead">Arquitetura de alto padrão em diálogo com a paisagem.</p>
+          <a href="#conceito" class="text-link">Explorar a residência</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Conceito arquitetônico — esquerda -->
+    <section class="section section--video section--left" id="conceito" aria-labelledby="titulo-conceito">
+      <div class="section-inner">
+        <div class="content-block content-block--left">
+          <p class="section-number" aria-hidden="true">01</p>
+          <p class="eyebrow">Conceito arquitetônico</p>
+          <h2 class="section-title" id="titulo-conceito">Geometria<br>e horizonte</h2>
+          <p class="body-text">Volumes precisos, ritmo contido e uma leitura espacial que privilegia a luz natural e a permanência do entorno.</p>
+        </div>
+        <div class="video-clearance" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- 3. Áreas de convivência — direita -->
+    <section class="section section--video section--right" id="convivencia" aria-labelledby="titulo-convivencia">
+      <div class="section-inner">
+        <div class="video-clearance" aria-hidden="true"></div>
+        <div class="content-block content-block--right">
+          <p class="section-number" aria-hidden="true">02</p>
+          <p class="eyebrow">Áreas de convivência</p>
+          <h2 class="section-title" id="titulo-convivencia">Espaços<br>para permanecer</h2>
+          <p class="body-text">Salas amplas, transições fluidas e uma escala humana que convida à contemplação e ao encontro.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Design e materiais — esquerda -->
+    <section class="section section--video section--left" id="materiais" aria-labelledby="titulo-materiais">
+      <div class="section-inner">
+        <div class="content-block content-block--left">
+          <p class="section-number" aria-hidden="true">03</p>
+          <p class="eyebrow">Design e materiais</p>
+          <h2 class="section-title" id="titulo-materiais">Textura<br>e autenticidade</h2>
+          <p class="body-text">Pedra natural, madeira nobre e superfícies minuciosamente selecionadas compõem uma paleta atemporal.</p>
+        </div>
+        <div class="video-clearance" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- 5. Integração interior e exterior — direita -->
+    <section class="section section--video section--right" id="integracao" aria-labelledby="titulo-integracao">
+      <div class="section-inner">
+        <div class="video-clearance" aria-hidden="true"></div>
+        <div class="content-block content-block--right">
+          <p class="section-number" aria-hidden="true">04</p>
+          <p class="eyebrow">Integração interior e exterior</p>
+          <h2 class="section-title" id="titulo-integracao">Limite<br>dissolvido</h2>
+          <p class="body-text">Aberturas generosas e pátios internos estabelecem continuidade entre o habitar e a natureza.</p>
+        </div>
+      </div>
+    </section>
+
+    </div>
+
+    <!-- 6. Informações da residência — editorial -->
+    <section class="section section--editorial" id="informacoes" aria-labelledby="titulo-informacoes">
+      <div class="section-inner section-inner--editorial">
+        <header class="editorial-header">
+          <p class="eyebrow">Informações da residência</p>
+          <h2 class="section-title section-title--editorial" id="titulo-informacoes">Dados essenciais</h2>
+        </header>
+        <div class="editorial-grid">
+          <dl class="spec-list">
+            <div class="spec-item">
+              <dt>Área construída</dt>
+              <dd>—</dd>
+            </div>
+            <div class="spec-item">
+              <dt>Área do terreno</dt>
+              <dd>—</dd>
+            </div>
+            <div class="spec-item">
+              <dt>Suítes</dt>
+              <dd>—</dd>
+            </div>
+            <div class="spec-item">
+              <dt>Vagas</dt>
+              <dd>—</dd>
+            </div>
+            <div class="spec-item">
+              <dt>Localização</dt>
+              <dd>—</dd>
+            </div>
+            <div class="spec-item">
+              <dt>Projeto arquitetônico</dt>
+              <dd>—</dd>
+            </div>
+          </dl>
+          <div class="editorial-note">
+            <p class="body-text body-text--narrow">Cada detalhe desta residência foi concebido para uma experiência de moradia singular — onde a arquitetura se torna cenário da vida cotidiana.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Galeria -->
+    <section class="section section--gallery" id="galeria" aria-labelledby="titulo-galeria">
+      <div class="section-inner section-inner--gallery">
+        <header class="gallery-header">
+          <p class="eyebrow">Galeria</p>
+          <h2 class="section-title" id="titulo-galeria">Registros<br>da obra</h2>
+        </header>
+        <div class="gallery-grid" role="list" aria-label="Espaços reservados para imagens">
+          <div class="gallery-slot" role="listitem" aria-label="Imagem 1"></div>
+          <div class="gallery-slot gallery-slot--wide" role="listitem" aria-label="Imagem 2"></div>
+          <div class="gallery-slot" role="listitem" aria-label="Imagem 3"></div>
+          <div class="gallery-slot" role="listitem" aria-label="Imagem 4"></div>
+          <div class="gallery-slot gallery-slot--tall" role="listitem" aria-label="Imagem 5"></div>
+          <div class="gallery-slot" role="listitem" aria-label="Imagem 6"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Contato final — centralizada -->
+    <section class="section section--contact" id="contato" aria-labelledby="titulo-contato">
+      <div class="section-inner">
+        <div class="content-block content-block--center">
+          <p class="eyebrow">Contato</p>
+          <h2 class="section-title" id="titulo-contato">Agende<br>sua visita</h2>
+          <p class="body-text body-text--centered">Entre em contato para conhecer esta residência em detalhe.</p>
+          <address class="contact-details">
+            <a href="mailto:contato@residencia.com" class="contact-link">contato@residencia.com</a>
+            <a href="tel:+5500000000000" class="contact-link">+55 (00) 0000-0000</a>
+          </address>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-text">&copy; 2026 Residência Contemporânea</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/video-scroll.js"></script>
+</body>
+</html>
