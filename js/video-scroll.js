@@ -7,7 +7,7 @@
 
   if (!video || !immersive || !backdrop) return;
 
-  const VIDEO_SRC = video.dataset.src || '/videos/video-completo.mp4';
+  const VIDEO_SRC = video.dataset.src || 'videos/video-completo.mp4';
   const MAX_RATE = 12;
   const MIN_ACTIVE_RATE = 0.2;
   const DRIFT_CORRECT = 0.35;
