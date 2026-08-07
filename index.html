@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Residência Contemporânea</title>
+  <title>Raiz Imóveis</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
@@ -13,11 +13,14 @@
 
   <header class="site-header" id="topo">
     <div class="header-inner">
-      <a href="#topo" class="header-logo" aria-label="Início">Residência</a>
+      <a href="#topo" class="header-logo" aria-label="Raiz Imóveis — Início">
+        <img src="images/logo-raiz.png" alt="Raiz Imóveis" class="header-logo-img" width="44" height="44">
+      </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
         <span class="nav-toggle-line"></span>
         <span class="nav-toggle-line"></span>
       </button>
+      <div class="nav-backdrop" aria-hidden="true"></div>
       <nav class="header-nav" id="menu-principal" aria-label="Navegação principal">
         <ul class="nav-list">
           <li><a href="#abertura">Abertura</a></li>
@@ -27,6 +30,7 @@
           <li><a href="#integracao">Integração</a></li>
           <li><a href="#informacoes">Informações</a></li>
           <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#corretor">Corretor</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
@@ -56,10 +60,10 @@
     <section class="section section--video section--center" id="abertura" aria-labelledby="titulo-abertura">
       <div class="section-inner">
         <div class="content-block content-block--center">
-          <p class="eyebrow">Residência Contemporânea</p>
-          <h1 class="display-title" id="titulo-abertura">Uma presença<br>silenciosa</h1>
-          <p class="lead">Arquitetura de alto padrão em diálogo com a paisagem.</p>
-          <a href="#conceito" class="text-link">Explorar a residência</a>
+          <p class="eyebrow">Raiz Imóveis</p>
+          <h1 class="display-title" id="titulo-abertura">A raiz de<br>um novo lugar</h1>
+          <p class="lead">Seu lugar é aqui — em Senador Canedo.</p>
+          <a href="#conceito" class="text-link">Conhecer o projeto</a>
         </div>
       </div>
     </section>
@@ -68,10 +72,9 @@
     <section class="section section--video section--left" id="conceito" aria-labelledby="titulo-conceito">
       <div class="section-inner">
         <div class="content-block content-block--left">
-          <p class="section-number" aria-hidden="true">01</p>
-          <p class="eyebrow">Conceito arquitetônico</p>
-          <h2 class="section-title" id="titulo-conceito">Geometria<br>e horizonte</h2>
-          <p class="body-text">Volumes precisos, ritmo contido e uma leitura espacial que privilegia a luz natural e a permanência do entorno.</p>
+          <p class="eyebrow">Conceito</p>
+          <h2 class="section-title" id="titulo-conceito">Não vamos<br>te convencer</h2>
+          <p class="body-text">Uma casa não se vende. Se reconhece. Cada projeto da Raiz nasce de uma pergunta simples: aqui, você se vê morando?</p>
         </div>
         <div class="video-clearance" aria-hidden="true"></div>
       </div>
@@ -82,10 +85,9 @@
       <div class="section-inner">
         <div class="video-clearance" aria-hidden="true"></div>
         <div class="content-block content-block--right">
-          <p class="section-number" aria-hidden="true">02</p>
-          <p class="eyebrow">Áreas de convivência</p>
-          <h2 class="section-title" id="titulo-convivencia">Espaços<br>para permanecer</h2>
-          <p class="body-text">Salas amplas, transições fluidas e uma escala humana que convida à contemplação e ao encontro.</p>
+          <p class="eyebrow">Convivência</p>
+          <h2 class="section-title" id="titulo-convivencia">Onde a vida<br>acontece</h2>
+          <p class="body-text">Piscina, varanda gourmet, churrasco. Espaços feitos para reunir — não para impressionar sozinhos.</p>
         </div>
       </div>
     </section>
@@ -94,10 +96,9 @@
     <section class="section section--video section--left" id="materiais" aria-labelledby="titulo-materiais">
       <div class="section-inner">
         <div class="content-block content-block--left">
-          <p class="section-number" aria-hidden="true">03</p>
-          <p class="eyebrow">Design e materiais</p>
-          <h2 class="section-title" id="titulo-materiais">Textura<br>e autenticidade</h2>
-          <p class="body-text">Pedra natural, madeira nobre e superfícies minuciosamente selecionadas compõem uma paleta atemporal.</p>
+          <p class="eyebrow">Materiais</p>
+          <h2 class="section-title" id="titulo-materiais">Sofisticação<br>nos detalhes</h2>
+          <p class="body-text">O que não se vê é o que sustenta o que se vê. Acabamentos escolhidos com o cuidado de quem vai morar ali por anos.</p>
         </div>
         <div class="video-clearance" aria-hidden="true"></div>
       </div>
@@ -108,54 +109,354 @@
       <div class="section-inner">
         <div class="video-clearance" aria-hidden="true"></div>
         <div class="content-block content-block--right">
-          <p class="section-number" aria-hidden="true">04</p>
-          <p class="eyebrow">Integração interior e exterior</p>
-          <h2 class="section-title" id="titulo-integracao">Limite<br>dissolvido</h2>
-          <p class="body-text">Aberturas generosas e pátios internos estabelecem continuidade entre o habitar e a natureza.</p>
+          <p class="eyebrow">Integração</p>
+          <h2 class="section-title" id="titulo-integracao">Dentro e fora,<br>um só espaço</h2>
+          <p class="body-text">A casa se abre para quem chega. Interior e exterior conversam sem interrupções — como deveria ser.</p>
         </div>
       </div>
     </section>
 
     </div>
 
-    <!-- 6. Informações da residência — editorial -->
-    <section class="section section--editorial" id="informacoes" aria-labelledby="titulo-informacoes">
+    <!-- 6. Imóveis em destaque -->
+    <section class="section section--editorial section--listings" id="informacoes" aria-labelledby="titulo-informacoes">
       <div class="section-inner section-inner--editorial">
-        <header class="editorial-header">
-          <p class="eyebrow">Informações da residência</p>
-          <h2 class="section-title section-title--editorial" id="titulo-informacoes">Dados essenciais</h2>
+        <header class="editorial-header editorial-header--listings">
+          <p class="eyebrow">Seleção Raiz</p>
+          <h2 class="section-title section-title--editorial" id="titulo-informacoes">Imóveis em destaque</h2>
         </header>
-        <div class="editorial-grid">
-          <dl class="spec-list">
-            <div class="spec-item">
-              <dt>Área construída</dt>
-              <dd>—</dd>
+        <p class="body-text listings-intro">Residências selecionadas em Senador Canedo. Arraste para o lado em cada card para ver as fotos do imóvel.</p>
+
+        <div class="property-grid" role="list" aria-label="Imóveis em destaque">
+
+          <!-- Imóvel 01 -->
+          <article class="property-card" role="listitem" data-property-id="01">
+            <div class="property-card__media">
+              <div class="property-card__carousel" role="region" aria-label="Fotos do imóvel">
+                <div class="property-card__track">
+                  <figure class="property-card__slide"><img src="images/imoveis/imovel-01-foto-1.jpg" alt="Piscina — Casa bem localizada" loading="lazy"></figure>
+                  <figure class="property-card__slide"><img src="images/imoveis/imovel-01-foto-2.jpg" alt="Área gourmet — Casa bem localizada" loading="lazy"></figure>
+                  <figure class="property-card__slide"><img src="images/imoveis/imovel-01-foto-3.jpg" alt="Sala — Casa bem localizada" loading="lazy"></figure>
+                </div>
+              </div>
+              <div class="property-card__dots" role="tablist" aria-label="Navegação de fotos">
+                <button type="button" class="property-card__dot is-active" aria-label="Foto 1" aria-selected="true"></button>
+                <button type="button" class="property-card__dot" aria-label="Foto 2" aria-selected="false"></button>
+                <button type="button" class="property-card__dot" aria-label="Foto 3" aria-selected="false"></button>
+              </div>
+              <div class="property-card__overlay">
+                <div class="property-card__top">
+                  <div class="property-card__location">
+                    <span class="property-card__city" data-field="city">Senador Canedo</span>
+                    <span class="property-card__neighborhood" data-field="neighborhood">Residencial Anuar Auad</span>
+                  </div>
+                </div>
+                <img src="images/logo-raiz.png" alt="" class="property-card__mark" aria-hidden="true">
+                <div class="property-card__bottom">
+                  <p class="property-card__type" data-field="type">Casa bem localizada, 2 suítes e piscina</p>
+                  <ul class="property-card__specs" aria-label="Dados do imóvel">
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="12" rx="1"/><path d="M8 8V5h8v3"/></svg>
+                      <span data-field="land">250 m²</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 9h16M9 4v16"/></svg>
+                      <span data-field="built">161 m²</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11h16v8H4z"/><path d="M7 11V7h10v4"/></svg>
+                      <span data-field="bedrooms">2 dorms</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14v7H5z"/><path d="M8 12V8h8v4"/></svg>
+                      <span data-field="suites">2 suítes</span>
+                    </li>
+                    <li class="property-card__spec" hidden>
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14h16l-2 5H6z"/><circle cx="7.5" cy="19.5" r="1.5"/><circle cx="16.5" cy="19.5" r="1.5"/></svg>
+                      <span data-field="parking">— vagas</span>
+                    </li>
+                  </ul>
+                  <p class="property-card__price" data-field="price">R$ 599.000</p>
+                </div>
+              </div>
             </div>
-            <div class="spec-item">
-              <dt>Área do terreno</dt>
-              <dd>—</dd>
+          </article>
+
+          <!-- Imóvel 02 -->
+          <article class="property-card" role="listitem" data-property-id="02">
+            <div class="property-card__media">
+              <div class="property-card__carousel" role="region" aria-label="Fotos do imóvel">
+                <div class="property-card__track">
+                  <figure class="property-card__slide"><img src="images/imoveis/imovel-02-foto-1.jpg" alt="Área externa — Casa de 3 quartos" loading="lazy"></figure>
+                  <figure class="property-card__slide"><img src="images/imoveis/imovel-02-foto-2.jpg" alt="Sala — Casa de 3 quartos" loading="lazy"></figure>
+                  <figure class="property-card__slide"><img src="images/imoveis/imovel-02-foto-3.jpg" alt="Área gourmet — Casa de 3 quartos" loading="lazy"></figure>
+                </div>
+              </div>
+              <div class="property-card__dots" role="tablist" aria-label="Navegação de fotos">
+                <button type="button" class="property-card__dot is-active" aria-label="Foto 1" aria-selected="true"></button>
+                <button type="button" class="property-card__dot" aria-label="Foto 2" aria-selected="false"></button>
+                <button type="button" class="property-card__dot" aria-label="Foto 3" aria-selected="false"></button>
+              </div>
+              <div class="property-card__overlay">
+                <div class="property-card__top">
+                  <div class="property-card__location">
+                    <span class="property-card__city" data-field="city">Senador Canedo</span>
+                    <span class="property-card__neighborhood" data-field="neighborhood">Alvorada</span>
+                  </div>
+                </div>
+                <img src="images/logo-raiz.png" alt="" class="property-card__mark" aria-hidden="true">
+                <div class="property-card__bottom">
+                  <p class="property-card__type" data-field="type">Casa de 3 quartos, pronta pra morar</p>
+                  <ul class="property-card__specs" aria-label="Dados do imóvel">
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="12" rx="1"/><path d="M8 8V5h8v3"/></svg>
+                      <span data-field="land">150 m²</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 9h16M9 4v16"/></svg>
+                      <span data-field="built">120 m²</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11h16v8H4z"/><path d="M7 11V7h10v4"/></svg>
+                      <span data-field="bedrooms">3 dorms</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14v7H5z"/><path d="M8 12V8h8v4"/></svg>
+                      <span data-field="suites">1 suíte</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14h16l-2 5H6z"/><circle cx="7.5" cy="19.5" r="1.5"/><circle cx="16.5" cy="19.5" r="1.5"/></svg>
+                      <span data-field="parking">2 vagas</span>
+                    </li>
+                  </ul>
+                  <p class="property-card__price" data-field="price">R$ 480.000</p>
+                </div>
+              </div>
             </div>
-            <div class="spec-item">
-              <dt>Suítes</dt>
-              <dd>—</dd>
+          </article>
+
+          <!-- Imóvel 03 -->
+          <article class="property-card" role="listitem" data-property-id="03">
+            <div class="property-card__media">
+              <div class="property-card__carousel" role="region" aria-label="Fotos do imóvel">
+                <div class="property-card__track">
+                  <figure class="property-card__slide"><img src="images/imoveis/imovel-03-foto-1.jpg" alt="Área externa — Casa nova" loading="lazy"></figure>
+                  <figure class="property-card__slide"><img src="images/imoveis/imovel-03-foto-2.jpg" alt="Cozinha — Casa nova" loading="lazy"></figure>
+                  <figure class="property-card__slide"><img src="images/imoveis/imovel-03-foto-3.jpg" alt="Sala — Casa nova" loading="lazy"></figure>
+                </div>
+              </div>
+              <div class="property-card__dots" role="tablist" aria-label="Navegação de fotos">
+                <button type="button" class="property-card__dot is-active" aria-label="Foto 1" aria-selected="true"></button>
+                <button type="button" class="property-card__dot" aria-label="Foto 2" aria-selected="false"></button>
+                <button type="button" class="property-card__dot" aria-label="Foto 3" aria-selected="false"></button>
+              </div>
+              <div class="property-card__overlay">
+                <div class="property-card__top">
+                  <div class="property-card__location">
+                    <span class="property-card__city" data-field="city">Senador Canedo</span>
+                    <span class="property-card__neighborhood" data-field="neighborhood">Jardim Canedo</span>
+                  </div>
+                </div>
+                <img src="images/logo-raiz.png" alt="" class="property-card__mark" aria-hidden="true">
+                <div class="property-card__bottom">
+                  <p class="property-card__type" data-field="type">Casa nova, 3 quartos com quintal</p>
+                  <ul class="property-card__specs" aria-label="Dados do imóvel">
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="12" rx="1"/><path d="M8 8V5h8v3"/></svg>
+                      <span data-field="land">173,7 m²</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 9h16M9 4v16"/></svg>
+                      <span data-field="built">126 m²</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11h16v8H4z"/><path d="M7 11V7h10v4"/></svg>
+                      <span data-field="bedrooms">3 dorms</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14v7H5z"/><path d="M8 12V8h8v4"/></svg>
+                      <span data-field="suites">1 suíte</span>
+                    </li>
+                    <li class="property-card__spec" hidden>
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14h16l-2 5H6z"/><circle cx="7.5" cy="19.5" r="1.5"/><circle cx="16.5" cy="19.5" r="1.5"/></svg>
+                      <span data-field="parking">— vagas</span>
+                    </li>
+                  </ul>
+                  <p class="property-card__price" data-field="price">R$ 500.000</p>
+                </div>
+              </div>
             </div>
-            <div class="spec-item">
-              <dt>Vagas</dt>
-              <dd>—</dd>
+          </article>
+
+          <!-- Imóvel 04 -->
+          <article class="property-card" role="listitem" data-property-id="04">
+            <div class="property-card__media">
+              <div class="property-card__carousel" role="region" aria-label="Fotos do imóvel">
+                <div class="property-card__track">
+                  <figure class="property-card__slide"><img src="images/imoveis/imovel-04-foto-1.jpg" alt="Fachada — Casa nova com quintal" loading="lazy"></figure>
+                  <figure class="property-card__slide"><img src="images/imoveis/imovel-04-foto-2.jpg" alt="Churrasqueira gourmet — Casa nova com quintal" loading="lazy"></figure>
+                  <figure class="property-card__slide"><img src="images/imoveis/imovel-04-foto-3.jpg" alt="Sala — Casa nova com quintal" loading="lazy"></figure>
+                </div>
+              </div>
+              <div class="property-card__dots" role="tablist" aria-label="Navegação de fotos">
+                <button type="button" class="property-card__dot is-active" aria-label="Foto 1" aria-selected="true"></button>
+                <button type="button" class="property-card__dot" aria-label="Foto 2" aria-selected="false"></button>
+                <button type="button" class="property-card__dot" aria-label="Foto 3" aria-selected="false"></button>
+              </div>
+              <div class="property-card__overlay">
+                <div class="property-card__top">
+                  <div class="property-card__location">
+                    <span class="property-card__city" data-field="city">Senador Canedo</span>
+                    <span class="property-card__neighborhood" data-field="neighborhood">Jardim Sevilha</span>
+                  </div>
+                </div>
+                <img src="images/logo-raiz.png" alt="" class="property-card__mark" aria-hidden="true">
+                <div class="property-card__bottom">
+                  <p class="property-card__type" data-field="type">Casa nova, com quintal</p>
+                  <ul class="property-card__specs" aria-label="Dados do imóvel">
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="12" rx="1"/><path d="M8 8V5h8v3"/></svg>
+                      <span data-field="land">191,68 m²</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 9h16M9 4v16"/></svg>
+                      <span data-field="built">100,01 m²</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11h16v8H4z"/><path d="M7 11V7h10v4"/></svg>
+                      <span data-field="bedrooms">3 dorms</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14v7H5z"/><path d="M8 12V8h8v4"/></svg>
+                      <span data-field="suites">1 suíte</span>
+                    </li>
+                    <li class="property-card__spec" hidden>
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14h16l-2 5H6z"/><circle cx="7.5" cy="19.5" r="1.5"/><circle cx="16.5" cy="19.5" r="1.5"/></svg>
+                      <span data-field="parking">— vagas</span>
+                    </li>
+                  </ul>
+                  <p class="property-card__price" data-field="price">R$ 400.000</p>
+                </div>
+              </div>
             </div>
-            <div class="spec-item">
-              <dt>Localização</dt>
-              <dd>—</dd>
+          </article>
+
+          <!-- Imóvel 05 -->
+          <article class="property-card" role="listitem" data-property-id="05">
+            <div class="property-card__media">
+              <div class="property-card__carousel" role="region" aria-label="Fotos do imóvel">
+                <div class="property-card__track">
+                  <figure class="property-card__slide"><img src="images/imoveis/imovel-05-foto-1.jpg" alt="Piscina — Casa clássica de 3 quartos" loading="lazy"></figure>
+                  <figure class="property-card__slide"><img src="images/imoveis/imovel-05-foto-2.jpg" alt="Varanda — Casa clássica de 3 quartos" loading="lazy"></figure>
+                  <figure class="property-card__slide"><img src="images/imoveis/imovel-05-foto-3.jpg" alt="Área de lazer — Casa clássica de 3 quartos" loading="lazy"></figure>
+                </div>
+              </div>
+              <div class="property-card__dots" role="tablist" aria-label="Navegação de fotos">
+                <button type="button" class="property-card__dot is-active" aria-label="Foto 1" aria-selected="true"></button>
+                <button type="button" class="property-card__dot" aria-label="Foto 2" aria-selected="false"></button>
+                <button type="button" class="property-card__dot" aria-label="Foto 3" aria-selected="false"></button>
+              </div>
+              <div class="property-card__overlay">
+                <div class="property-card__top">
+                  <div class="property-card__location">
+                    <span class="property-card__city" data-field="city">Senador Canedo</span>
+                    <span class="property-card__neighborhood" data-field="neighborhood">Saída para Goiânia</span>
+                  </div>
+                </div>
+                <img src="images/logo-raiz.png" alt="" class="property-card__mark" aria-hidden="true">
+                <div class="property-card__bottom">
+                  <p class="property-card__type" data-field="type">Casa clássica de 3 quartos</p>
+                  <ul class="property-card__specs" aria-label="Dados do imóvel">
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="12" rx="1"/><path d="M8 8V5h8v3"/></svg>
+                      <span data-field="land">262 m²</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 9h16M9 4v16"/></svg>
+                      <span data-field="built">163 m²</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11h16v8H4z"/><path d="M7 11V7h10v4"/></svg>
+                      <span data-field="bedrooms">3 dorms</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14v7H5z"/><path d="M8 12V8h8v4"/></svg>
+                      <span data-field="suites">1 suíte</span>
+                    </li>
+                    <li class="property-card__spec" hidden>
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14h16l-2 5H6z"/><circle cx="7.5" cy="19.5" r="1.5"/><circle cx="16.5" cy="19.5" r="1.5"/></svg>
+                      <span data-field="parking">— vagas</span>
+                    </li>
+                  </ul>
+                  <p class="property-card__price" data-field="price">R$ 720.000</p>
+                </div>
+              </div>
             </div>
-            <div class="spec-item">
-              <dt>Projeto arquitetônico</dt>
-              <dd>—</dd>
+          </article>
+
+          <!--
+          Template do card — duplique este bloco para cada imóvel:
+
+          <article class="property-card" role="listitem" data-property-id="XX">
+            <div class="property-card__media">
+              <div class="property-card__carousel" role="region" aria-label="Fotos do imóvel">
+                <div class="property-card__track">
+                  <figure class="property-card__slide"><img src="images/imoveis/imovel-XX-foto-1.jpg" alt="Fachada — Tipo do imóvel" loading="lazy"></figure>
+                  <figure class="property-card__slide"><img src="images/imoveis/imovel-XX-foto-2.jpg" alt="Interior — Tipo do imóvel" loading="lazy"></figure>
+                  <figure class="property-card__slide"><img src="images/imoveis/imovel-XX-foto-3.jpg" alt="Área externa — Tipo do imóvel" loading="lazy"></figure>
+                </div>
+              </div>
+              <div class="property-card__dots" role="tablist" aria-label="Navegação de fotos">
+                <button type="button" class="property-card__dot is-active" aria-label="Foto 1" aria-selected="true"></button>
+                <button type="button" class="property-card__dot" aria-label="Foto 2" aria-selected="false"></button>
+                <button type="button" class="property-card__dot" aria-label="Foto 3" aria-selected="false"></button>
+              </div>
+              <div class="property-card__overlay">
+                <div class="property-card__top">
+                  <div class="property-card__location">
+                    <span class="property-card__city" data-field="city">Senador Canedo</span>
+                    <span class="property-card__neighborhood" data-field="neighborhood">Bairro</span>
+                  </div>
+                </div>
+                <img src="images/logo-raiz.png" alt="" class="property-card__mark" aria-hidden="true">
+                <div class="property-card__bottom">
+                  <p class="property-card__type" data-field="type">Tipo do imóvel</p>
+                  <ul class="property-card__specs" aria-label="Dados do imóvel">
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="12" rx="1"/><path d="M8 8V5h8v3"/></svg>
+                      <span data-field="land">000 m²</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 9h16M9 4v16"/></svg>
+                      <span data-field="built">000 m²</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11h16v8H4z"/><path d="M7 11V7h10v4"/></svg>
+                      <span data-field="bedrooms">0 dorms</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14v7H5z"/><path d="M8 12V8h8v4"/></svg>
+                      <span data-field="suites">0 suítes</span>
+                    </li>
+                    <li class="property-card__spec" hidden>
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14h16l-2 5H6z"/><circle cx="7.5" cy="19.5" r="1.5"/><circle cx="16.5" cy="19.5" r="1.5"/></svg>
+                      <span data-field="parking">0 vagas</span>
+                    </li>
+                  </ul>
+                  <p class="property-card__price" data-field="price">R$ 000.000</p>
+                </div>
+              </div>
             </div>
-          </dl>
-          <div class="editorial-note">
-            <p class="body-text body-text--narrow">Cada detalhe desta residência foi concebido para uma experiência de moradia singular — onde a arquitetura se torna cenário da vida cotidiana.</p>
-          </div>
+          </article>
+          -->
+
         </div>
+
+        <div class="listings-catalog">
+          <a href="https://www.whatsapp.com/catalog/556295747746/?app_absent=0&utm_source=ig" class="listings-catalog__btn" target="_blank" rel="noopener noreferrer">Ver catálogo completo</a>
+        </div>
+
+        <p class="body-text body-text--narrow editorial-caption">Não existem duas iguais. Cada residência que carrega o nome Raiz passa por uma curadoria exigente — porque padrão alto não se declara, se comprova em cada detalhe.</p>
       </div>
     </section>
 
@@ -163,44 +464,105 @@
     <section class="section section--gallery" id="galeria" aria-labelledby="titulo-galeria">
       <div class="section-inner section-inner--gallery">
         <header class="gallery-header">
-          <p class="eyebrow">Galeria</p>
-          <h2 class="section-title" id="titulo-galeria">Registros<br>da obra</h2>
+          <p class="eyebrow">Registro</p>
+          <h2 class="section-title" id="titulo-galeria">Antes de morar,<br>é preciso sentir</h2>
         </header>
-        <div class="gallery-grid" role="list" aria-label="Espaços reservados para imagens">
-          <div class="gallery-slot" role="listitem" aria-label="Imagem 1"></div>
-          <div class="gallery-slot gallery-slot--wide" role="listitem" aria-label="Imagem 2"></div>
-          <div class="gallery-slot" role="listitem" aria-label="Imagem 3"></div>
-          <div class="gallery-slot" role="listitem" aria-label="Imagem 4"></div>
-          <div class="gallery-slot gallery-slot--tall" role="listitem" aria-label="Imagem 5"></div>
-          <div class="gallery-slot" role="listitem" aria-label="Imagem 6"></div>
+        <p class="body-text gallery-intro">Imagens reais. Momentos reais. Cada entrega é a prova de que o processo funciona.</p>
+        <div class="gallery-grid-wrap">
+          <div class="gallery-grid" role="list" aria-label="Registros da residência">
+            <div class="gallery-slot" role="listitem">
+              <img src="images/gallery/galeria-1.jpg" alt="Brinde ao ar livre na área externa da residência" loading="lazy">
+            </div>
+            <div class="gallery-slot" role="listitem">
+              <img src="images/gallery/galeria-2.jpg" alt="Celebração na área gourmet da residência" loading="lazy">
+            </div>
+            <div class="gallery-slot" role="listitem">
+              <img src="images/gallery/galeria-3.jpg" alt="Brinde noturno no pátio da casa" loading="lazy">
+            </div>
+            <div class="gallery-slot" role="listitem">
+              <img src="images/gallery/galeria-4.jpg" alt="Momento de celebração no jardim" loading="lazy">
+            </div>
+            <div class="gallery-slot" role="listitem">
+              <img src="images/gallery/galeria-5.jpg" alt="Entrega das chaves e presente na residência" loading="lazy">
+            </div>
+            <div class="gallery-slot" role="listitem">
+              <img src="images/gallery/galeria-6.jpg" alt="Família recebendo as chaves na entrada da casa" loading="lazy">
+            </div>
+            <div class="gallery-slot" role="listitem">
+              <img src="images/gallery/galeria-7.jpg" alt="Assinatura e entrega na cozinha da residência" loading="lazy">
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- 8. Contato final — centralizada -->
-    <section class="section section--contact" id="contato" aria-labelledby="titulo-contato">
-      <div class="section-inner">
-        <div class="content-block content-block--center">
-          <p class="eyebrow">Contato</p>
-          <h2 class="section-title" id="titulo-contato">Agende<br>sua visita</h2>
-          <p class="body-text body-text--centered">Entre em contato para conhecer esta residência em detalhe.</p>
-          <address class="contact-details">
-            <a href="mailto:contato@residencia.com" class="contact-link">contato@residencia.com</a>
-            <a href="tel:+5500000000000" class="contact-link">+55 (00) 0000-0000</a>
-          </address>
+    <!-- 8. Apresentação do corretor -->
+    <section class="section section--broker" id="corretor" aria-labelledby="titulo-corretor">
+      <div class="section-inner section-inner--broker">
+        <div class="broker-profile">
+          <div class="broker-photo">
+            <div class="broker-photo__frame">
+              <img src="images/corretor/marcelo.png" alt="Marcelo Antonio — Corretor Raiz Imóveis" class="broker-photo__image" width="320" height="320">
+            </div>
+          </div>
+          <div class="broker-copy">
+            <p class="eyebrow">Quem conduz a Raiz</p>
+            <h2 class="section-title section-title--broker" id="titulo-corretor">Marcelo Antonio</h2>
+            <p class="body-text broker-bio">Corretor de imóveis com atuação em Senador Canedo e região, Marcelo conduz cada negociação com proximidade, transparência e foco no que realmente importa: encontrar a casa certa para cada família. Na Raiz, o atendimento é direto — sem intermediários, sem ruído.</p>
+          </div>
         </div>
+
+        <ul class="broker-pillars" aria-label="Diferenciais de atendimento">
+          <li class="broker-pillar">
+            <span class="broker-pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </span>
+            <p class="broker-pillar__text">Atendimento direto e personalizado</p>
+          </li>
+          <li class="broker-pillar">
+            <span class="broker-pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+            </span>
+            <p class="broker-pillar__text">Alta qualidade na apresentação dos imóveis, com fotos e registros exclusivos</p>
+          </li>
+          <li class="broker-pillar">
+            <span class="broker-pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01"/><path d="M9 12v.01"/><path d="M9 15v.01"/><path d="M9 18v.01"/></svg>
+            </span>
+            <p class="broker-pillar__text">Atuação focada em imóveis de alto padrão e casas em condomínio</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 9. Contato final — centralizada -->
+    <section class="section section--contact" id="contato" aria-labelledby="titulo-contato">
+      <div class="section-inner section-inner--contact">
+        <header class="contact-header">
+          <p class="eyebrow">Um convite</p>
+          <h2 class="section-title" id="titulo-contato">Se reconheceu,<br>converse conosco</h2>
+        </header>
+        <p class="body-text contact-intro">Uma casa não se escolhe com pressa. Se algo aqui fez sentido, fale com a Raiz — atendimento direto, no seu tempo, em Senador Canedo.</p>
+        <address class="contact-details">
+          <a href="https://wa.me/message/KKXJ743HWVUOE1" class="contact-link">WhatsApp Raiz Imóveis</a>
+          <a href="tel:+556295747746" class="contact-link">(62) 9 9574-7746</a>
+        </address>
       </div>
     </section>
 
   </main>
 
   <footer class="site-footer">
-    <p class="footer-text">&copy; 2026 Residência Contemporânea</p>
+    <div class="footer-inner">
+      <a href="#topo" class="footer-logo" aria-label="Raiz Imóveis — Voltar ao topo">
+        <img src="images/logo-raiz.png" alt="" class="footer-logo-img" width="72" height="72">
+      </a>
+      <p class="footer-text">&copy; 2026 Raiz Imóveis — Senador Canedo</p>
+    </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/property-carousel.js"></script>
   <script src="js/video-scroll.js"></script>
 </body>
 </html>
