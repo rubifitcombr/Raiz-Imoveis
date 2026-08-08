@@ -13,17 +13,23 @@
   const DRIFT_CORRECT = 0.35;
   const END_OFFSET = 0.04;
 
-  let objectUrl = null;
+  const isTouch =
+    window.matchMedia('(hover: none) and (pointer: coarse)').matches ||
+    'ontouchstart' in window;
+
   let duration = 0;
   let isReady = false;
   let lastProgress = 0;
   let lastFrameTime = 0;
   let idleFrames = 0;
+  let isUnlocked = false;
 
   video.pause();
   video.muted = true;
   video.playsInline = true;
-  video.preservesPitch = false;
+  video.setAttribute('playsinline', '');
+  video.setAttribute('webkit-playsinline', '');
+  video.disablePictureInPicture = true;
 
   function clamp(value, min, max) {
     return Math.max(min, Math.min(max, value));
@@ -53,10 +59,14 @@
     const next = clamp(time, 0, getEndTime());
     if (Math.abs(video.currentTime - next) < 0.01) return;
 
-    if (typeof video.fastSeek === 'function') {
-      video.fastSeek(next);
-    } else {
-      video.currentTime = next;
+    try {
+      if (!isTouch && typeof video.fastSeek === 'function') {
+        video.fastSeek(next);
+      } else {
+        video.currentTime = next;
+      }
+    } catch (error) {
+      /* iOS pode rejeitar seek antes do desbloqueio */
     }
   }
 
@@ -96,8 +106,33 @@
     return true;
   }
 
-  function tick(now) {
-    requestAnimationFrame(tick);
+  function scrubTo(targetTime) {
+    const next = clamp(targetTime, 0, getEndTime());
+
+    if (Math.abs(video.currentTime - next) < 0.016) return;
+
+    try {
+      video.currentTime = next;
+    } catch (error) {
+      /* ignorar seek rejeitado */
+    }
+  }
+
+  function tickTouch() {
+    requestAnimationFrame(tickTouch);
+
+    if (!isReady) return;
+
+    const progress = getProgress();
+    const targetTime = clamp(progress * duration, 0, getEndTime());
+
+    updateBackdrop();
+    scrubTo(targetTime);
+    lastProgress = progress;
+  }
+
+  function tickDesktop(now) {
+    requestAnimationFrame(tickDesktop);
 
     if (!isReady) return;
 
@@ -170,15 +205,43 @@
   }
 
   function waitForVideoReady() {
-    return new Promise(function (resolve) {
-      if (video.readyState >= HTMLMediaElement.HAVE_FUTURE_DATA) {
+    return new Promise(function (resolve, reject) {
+      function onReady() {
+        if (video.readyState >= HTMLMediaElement.HAVE_METADATA) {
+          resolve();
+        }
+      }
+
+      if (video.readyState >= HTMLMediaElement.HAVE_METADATA) {
         resolve();
         return;
       }
 
-      video.addEventListener('loadeddata', resolve, { once: true });
-      video.addEventListener('canplaythrough', resolve, { once: true });
+      video.addEventListener('loadedmetadata', onReady, { once: true });
+      video.addEventListener('canplay', onReady, { once: true });
+      video.addEventListener('error', function () {
+        reject(new Error('Falha ao carregar vídeo'));
+      }, { once: true });
     });
+  }
+
+  function unlockVideo() {
+    if (isUnlocked) return;
+    isUnlocked = true;
+
+    video.muted = true;
+
+    const promise = video.play();
+    if (promise && typeof promise.then === 'function') {
+      promise
+        .then(function () {
+          video.pause();
+          snapTo(getProgress() * duration);
+        })
+        .catch(function () {
+          /* scrub por currentTime funciona mesmo sem play */
+        });
+    }
   }
 
   function initScroll() {
@@ -188,25 +251,26 @@
 
     window.addEventListener('resize', updateBackdrop, { passive: true });
 
+    document.addEventListener('touchstart', unlockVideo, { once: true, passive: true });
+    document.addEventListener('click', unlockVideo, { once: true });
+    document.addEventListener('scroll', unlockVideo, { once: true, passive: true });
+
     updateBackdrop();
     snapTo(0);
-    requestAnimationFrame(tick);
+
+    if (isTouch) {
+      requestAnimationFrame(tickTouch);
+    } else {
+      requestAnimationFrame(tickDesktop);
+    }
   }
 
-  function loadVideoBlob() {
-    return fetch(VIDEO_SRC)
-      .then(function (response) {
-        if (!response.ok) {
-          throw new Error('Falha ao carregar vídeo: ' + response.status);
-        }
-        return response.blob();
-      })
-      .then(function (blob) {
-        objectUrl = URL.createObjectURL(blob);
-        video.src = objectUrl;
-        video.preload = 'auto';
-        return waitForVideoReady();
-      })
+  function loadVideo() {
+    video.src = VIDEO_SRC;
+    video.preload = 'auto';
+    video.load();
+
+    return waitForVideoReady()
       .then(function () {
         duration = video.duration;
 
@@ -223,12 +287,9 @@
       });
   }
 
-  loadVideoBlob();
+  loadVideo();
 
   window.addEventListener('beforeunload', function () {
     video.pause();
-    if (objectUrl) {
-      URL.revokeObjectURL(objectUrl);
-    }
   });
 })();

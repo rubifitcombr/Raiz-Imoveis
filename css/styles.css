@@ -198,16 +198,17 @@ body.is-nav-open {
 }
 
 .immersive-video {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   max-width: none;
   object-fit: cover;
   pointer-events: none;
   transform: translateZ(0);
+  -webkit-transform: translateZ(0);
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .video-overlay {
