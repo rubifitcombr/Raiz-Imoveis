@@ -57,27 +57,4 @@ document.addEventListener('DOMContentLoaded', function () {
         grid.appendChild(card);
       });
   }
-
-  const revealTargets = document.querySelectorAll('#informacoes .property-card, #informacoes .listings-catalog, #informacoes .editorial-caption');
-  revealTargets.forEach(function (el) {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(16px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-  });
-
-  const observer = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry, index) {
-      if (entry.isIntersecting) {
-        setTimeout(function () {
-          entry.target.style.opacity = '1';
-          entry.target.style.transform = 'translateY(0)';
-        }, index * 80);
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.2 });
-
-  revealTargets.forEach(function (el) {
-    observer.observe(el);
-  });
 });

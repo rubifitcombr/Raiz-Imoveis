@@ -1639,7 +1639,49 @@ body.is-nav-open {
     transition-duration: 0.01ms !important;
   }
 
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+
   .whatsapp-float__pulse {
     animation: none;
   }
+}
+
+/* =============================================
+   Scroll effects — segunda metade do site
+   ============================================= */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-progress {
+  position: fixed;
+  top: var(--header-height);
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: var(--color-text);
+  z-index: 101;
+  transition: width 0.1s linear;
+}
+
+.property-image-wrap {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.property-image-wrap img {
+  will-change: transform;
+  transition: transform 0.1s linear;
 }
