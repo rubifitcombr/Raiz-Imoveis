@@ -1,5 +1,5 @@
 {
-  "name": "raiz-imoveis",
+  "name": "marcelo-antonio-imoveis",
   "private": true,
   "scripts": {
     "build": "node scripts/build.js"
