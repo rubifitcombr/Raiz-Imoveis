@@ -211,6 +211,18 @@ body.is-nav-open {
   -webkit-backface-visibility: hidden;
 }
 
+@media (min-width: 901px) {
+  .video-slot {
+    overflow: hidden;
+  }
+
+  .immersive-video {
+    transform: translateZ(0) scale(1.24);
+    -webkit-transform: translateZ(0) scale(1.24);
+    object-position: center 42%;
+  }
+}
+
 .video-overlay {
   position: fixed;
   top: 0;
@@ -1006,7 +1018,16 @@ body.is-nav-open {
 
 .section-title--broker {
   font-size: clamp(2.25rem, 5vw, 3.5rem);
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.broker-creci {
+  margin-bottom: 1.25rem;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-text-light);
 }
 
 .broker-bio {
@@ -1174,6 +1195,15 @@ body.is-nav-open {
   font-weight: 400;
   letter-spacing: 0.02em;
   color: var(--color-text);
+}
+
+.team-member__creci {
+  margin-top: -0.75rem;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-text-light);
 }
 
 .team-member__bio {
