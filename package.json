@@ -2,6 +2,10 @@
   "name": "marcelo-antonio-imoveis",
   "private": true,
   "scripts": {
-    "build": "node scripts/build.js"
+    "build": "node scripts/build.js",
+    "start": "serve -l 3000"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
   }
 }
