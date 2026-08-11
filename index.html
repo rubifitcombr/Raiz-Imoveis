@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcelo Antonio Imóveis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header" id="topo">
+    <div class="header-inner">
+      <a href="#topo" class="header-logo" aria-label="Marcelo Antonio Imóveis — Início">
+        <img src="images/logo-marcelo-antonio.png" alt="Marcelo Antonio Imóveis" class="header-logo-img" width="52" height="52">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </button>
+      <div class="nav-backdrop" aria-hidden="true"></div>
+      <nav class="header-nav" id="menu-principal" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#abertura">Abertura</a></li>
+          <li><a href="#conceito">Conceito</a></li>
+          <li><a href="#convivencia">Convivência</a></li>
+          <li><a href="#materiais">Materiais</a></li>
+          <li><a href="#integracao">Integração</a></li>
+          <li><a href="#informacoes">Informações</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#corretor">Corretor</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+
+    <!-- Camadas: vídeo → overlay → seções (cabeçalho acima) -->
+    <div class="video-backdrop" aria-hidden="true">
+      <div class="video-slot" role="presentation">
+        <video
+          class="immersive-video"
+          data-src="videos/tour-scroll.mp4"
+          muted
+          playsinline
+          webkit-playsinline
+          disablepictureinpicture
+          preload="auto"
+          tabindex="-1"
+        ></video>
+      </div>
+      <div class="video-overlay" role="presentation"></div>
+    </div>
+
+    <div class="immersive-experience">
+
+    <!-- 1. Abertura — centralizada -->
+    <section class="section section--video section--center" id="abertura" aria-labelledby="titulo-abertura">
+      <div class="section-inner">
+        <div class="content-block content-block--center">
+          <p class="eyebrow">Marcelo Antonio Imóveis</p>
+          <h1 class="display-title" id="titulo-abertura">Uma casa maior pelo mesmo valor,<br>em Senador Canedo</h1>
+          <a href="#informacoes" class="text-link">Ver imóveis disponíveis</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Conceito arquitetônico — esquerda -->
+    <section class="section section--video section--left" id="conceito" aria-labelledby="titulo-conceito">
+      <div class="section-inner">
+        <div class="content-block content-block--left">
+          <p class="eyebrow">Conceito</p>
+          <h2 class="section-title" id="titulo-conceito">Não vamos<br>te convencer</h2>
+          <p class="body-text">Uma casa não se vende. Se reconhece. Cada projeto de Marcelo Antonio Imóveis nasce de uma pergunta simples: aqui, você se vê morando?</p>
+        </div>
+        <div class="video-clearance" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- 3. Áreas de convivência — direita -->
+    <section class="section section--video section--right" id="convivencia" aria-labelledby="titulo-convivencia">
+      <div class="section-inner">
+        <div class="video-clearance" aria-hidden="true"></div>
+        <div class="content-block content-block--right">
+          <p class="eyebrow">Convivência</p>
+          <h2 class="section-title" id="titulo-convivencia">Onde a vida<br>acontece</h2>
+          <p class="body-text">Piscina, varanda gourmet, churrasco. Espaços feitos para reunir — não para impressionar sozinhos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Design e materiais — esquerda -->
+    <section class="section section--video section--left" id="materiais" aria-labelledby="titulo-materiais">
+      <div class="section-inner">
+        <div class="content-block content-block--left">
+          <p class="eyebrow">Materiais</p>
+          <h2 class="section-title" id="titulo-materiais">Sofisticação<br>nos detalhes</h2>
+          <p class="body-text">O que não se vê é o que sustenta o que se vê. Acabamentos escolhidos com o cuidado de quem vai morar ali por anos.</p>
+        </div>
+        <div class="video-clearance" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- 5. Integração interior e exterior — direita -->
+    <section class="section section--video section--right" id="integracao" aria-labelledby="titulo-integracao">
+      <div class="section-inner">
+        <div class="video-clearance" aria-hidden="true"></div>
+        <div class="content-block content-block--right">
+          <p class="eyebrow">Integração</p>
+          <h2 class="section-title" id="titulo-integracao">Dentro e fora,<br>um só espaço</h2>
+          <p class="body-text">A casa se abre para quem chega. Interior e exterior conversam sem interrupções — como deveria ser.</p>
+        </div>
+      </div>
+    </section>
+
+    </div>
+
+    <!-- 6. Imóveis em destaque -->
+    <section class="section section--editorial section--listings" id="informacoes" aria-labelledby="titulo-informacoes">
+      <div class="section-inner section-inner--editorial">
+        <header class="editorial-header editorial-header--listings">
+          <p class="eyebrow">Seleção Marcelo Antonio</p>
+          <h2 class="section-title section-title--editorial" id="titulo-informacoes">Imóveis em destaque</h2>
+        </header>
+        <p class="body-text listings-intro">Residências selecionadas em Senador Canedo. Arraste para o lado em cada card para ver as fotos do imóvel.</p>
+
+        <div class="property-grid" role="list" aria-label="Imóveis em destaque">
+
+          <article class="property-card reveal" role="listitem" data-property-id="01">
+            <div class="property-card__media">
+              <div class="property-card__carousel" role="region" aria-label="Fotos do imóvel">
+                <div class="property-card__track">
+                  <figure class="property-card__slide"><div class="property-image-wrap"><img src="images/imoveis/imovel-01-foto-1.jpg" alt="Fachada — Casa no Vale das Brisas" loading="lazy"></div></figure>
+                  <figure class="property-card__slide"><div class="property-image-wrap"><img src="images/imoveis/imovel-01-foto-2.jpg" alt="Sala integrada — Casa no Vale das Brisas" loading="lazy"></div></figure>
+                  <figure class="property-card__slide"><div class="property-image-wrap"><img src="images/imoveis/imovel-01-foto-3.jpg" alt="Área de lazer com churrasqueira — Casa no Vale das Brisas" loading="lazy"></div></figure>
+                </div>
+              </div>
+              <div class="property-card__dots" role="tablist" aria-label="Navegação de fotos">
+                <button type="button" class="property-card__dot is-active" aria-label="Foto 1" aria-selected="true"></button>
+                <button type="button" class="property-card__dot" aria-label="Foto 2" aria-selected="false"></button>
+                <button type="button" class="property-card__dot" aria-label="Foto 3" aria-selected="false"></button>
+              </div>
+              <div class="property-card__overlay">
+                <div class="property-card__top">
+                  <div class="property-card__location">
+                    <span class="property-card__city" data-field="city">Senador Canedo</span>
+                    <span class="property-card__neighborhood" data-field="neighborhood">Vale das Brisas</span>
+                  </div>
+                </div>
+                <img src="images/logo-marcelo-antonio.png" alt="" class="property-card__mark" aria-hidden="true">
+                <div class="property-card__bottom">
+                  <p class="property-card__type" data-field="type">Casa pronta pra morar em condomínio fechado</p>
+                  <ul class="property-card__specs" aria-label="Dados do imóvel">
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="12" rx="1"/><path d="M8 8V5h8v3"/></svg>
+                      <span data-field="land">182,45 m²</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 9h16M9 4v16"/></svg>
+                      <span data-field="built">111,20 m²</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11h16v8H4z"/><path d="M7 11V7h10v4"/></svg>
+                      <span data-field="bedrooms">2 dorms</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14v7H5z"/><path d="M8 12V8h8v4"/></svg>
+                      <span data-field="suites">1 suíte</span>
+                    </li>
+                    <li class="property-card__spec" hidden>
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14h16l-2 5H6z"/><circle cx="7.5" cy="19.5" r="1.5"/><circle cx="16.5" cy="19.5" r="1.5"/></svg>
+                      <span data-field="parking">— vagas</span>
+                    </li>
+                  </ul>
+                  <p class="property-card__price" data-field="price">R$ 370.000</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="property-card reveal" role="listitem" data-property-id="02">
+            <div class="property-card__media">
+              <div class="property-card__carousel" role="region" aria-label="Fotos do imóvel">
+                <div class="property-card__track">
+                  <figure class="property-card__slide"><div class="property-image-wrap"><img src="images/imoveis/imovel-02-foto-1.jpg" alt="Área gourmet — Casa Morada do Bosque" loading="lazy"></div></figure>
+                  <figure class="property-card__slide"><div class="property-image-wrap"><img src="images/imoveis/imovel-02-foto-2.jpg" alt="Sala com pé direito alto — Casa Morada do Bosque" loading="lazy"></div></figure>
+                  <figure class="property-card__slide"><div class="property-image-wrap"><img src="images/imoveis/imovel-02-foto-3.jpg" alt="Quarto com closet — Casa Morada do Bosque" loading="lazy"></div></figure>
+                </div>
+              </div>
+              <div class="property-card__dots" role="tablist" aria-label="Navegação de fotos">
+                <button type="button" class="property-card__dot is-active" aria-label="Foto 1" aria-selected="true"></button>
+                <button type="button" class="property-card__dot" aria-label="Foto 2" aria-selected="false"></button>
+                <button type="button" class="property-card__dot" aria-label="Foto 3" aria-selected="false"></button>
+              </div>
+              <div class="property-card__overlay">
+                <div class="property-card__top">
+                  <div class="property-card__location">
+                    <span class="property-card__city" data-field="city">Senador Canedo</span>
+                    <span class="property-card__neighborhood" data-field="neighborhood">Morada do Bosque</span>
+                  </div>
+                </div>
+                <img src="images/logo-marcelo-antonio.png" alt="" class="property-card__mark" aria-hidden="true">
+                <div class="property-card__bottom">
+                  <p class="property-card__type" data-field="type">Casa 3 quartos com suíte e closet, acabamento premium</p>
+                  <ul class="property-card__specs" aria-label="Dados do imóvel">
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="12" rx="1"/><path d="M8 8V5h8v3"/></svg>
+                      <span data-field="land">150 m²</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 9h16M9 4v16"/></svg>
+                      <span data-field="built">112 m²</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11h16v8H4z"/><path d="M7 11V7h10v4"/></svg>
+                      <span data-field="bedrooms">3 dorms</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14v7H5z"/><path d="M8 12V8h8v4"/></svg>
+                      <span data-field="suites">1 suíte</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14h16l-2 5H6z"/><circle cx="7.5" cy="19.5" r="1.5"/><circle cx="16.5" cy="19.5" r="1.5"/></svg>
+                      <span data-field="parking">3 vagas</span>
+                    </li>
+                  </ul>
+                  <p class="property-card__price" data-field="price">R$ 400.000</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="property-card reveal" role="listitem" data-property-id="03">
+            <div class="property-card__media">
+              <div class="property-card__carousel" role="region" aria-label="Fotos do imóvel">
+                <div class="property-card__track">
+                  <figure class="property-card__slide"><div class="property-image-wrap"><img src="images/imoveis/imovel-03-foto-1.jpg" alt="Área gourmet — Casa Jardim Canedo 1" loading="lazy"></div></figure>
+                  <figure class="property-card__slide"><div class="property-image-wrap"><img src="images/imoveis/imovel-03-foto-2.jpg" alt="Garagem — Casa Jardim Canedo 1" loading="lazy"></div></figure>
+                  <figure class="property-card__slide"><div class="property-image-wrap"><img src="images/imoveis/imovel-03-foto-3.jpg" alt="Sala com pé direito elevado — Casa Jardim Canedo 1" loading="lazy"></div></figure>
+                  <figure class="property-card__slide"><div class="property-image-wrap"><img src="images/imoveis/imovel-03-foto-4.jpg" alt="Cozinha integrada — Casa Jardim Canedo 1" loading="lazy"></div></figure>
+                  <figure class="property-card__slide"><div class="property-image-wrap"><img src="images/imoveis/imovel-03-foto-5.jpg" alt="Banheiro com nicho — Casa Jardim Canedo 1" loading="lazy"></div></figure>
+                </div>
+              </div>
+              <div class="property-card__dots" role="tablist" aria-label="Navegação de fotos">
+                <button type="button" class="property-card__dot is-active" aria-label="Foto 1" aria-selected="true"></button>
+                <button type="button" class="property-card__dot" aria-label="Foto 2" aria-selected="false"></button>
+                <button type="button" class="property-card__dot" aria-label="Foto 3" aria-selected="false"></button>
+                <button type="button" class="property-card__dot" aria-label="Foto 4" aria-selected="false"></button>
+                <button type="button" class="property-card__dot" aria-label="Foto 5" aria-selected="false"></button>
+              </div>
+              <div class="property-card__overlay">
+                <div class="property-card__top">
+                  <div class="property-card__location">
+                    <span class="property-card__city" data-field="city">Senador Canedo</span>
+                    <span class="property-card__neighborhood" data-field="neighborhood">Jardim Canedo 1</span>
+                  </div>
+                </div>
+                <img src="images/logo-marcelo-antonio.png" alt="" class="property-card__mark" aria-hidden="true">
+                <div class="property-card__bottom">
+                  <p class="property-card__type" data-field="type">Casa 3 quartos com suíte, pé direito elevado e gourmet</p>
+                  <ul class="property-card__specs" aria-label="Dados do imóvel">
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="12" rx="1"/><path d="M8 8V5h8v3"/></svg>
+                      <span data-field="land">190,49 m²</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 9h16M9 4v16"/></svg>
+                      <span data-field="built">116,25 m²</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11h16v8H4z"/><path d="M7 11V7h10v4"/></svg>
+                      <span data-field="bedrooms">3 dorms</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14v7H5z"/><path d="M8 12V8h8v4"/></svg>
+                      <span data-field="suites">1 suíte</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14h16l-2 5H6z"/><circle cx="7.5" cy="19.5" r="1.5"/><circle cx="16.5" cy="19.5" r="1.5"/></svg>
+                      <span data-field="parking">3 vagas</span>
+                    </li>
+                  </ul>
+                  <p class="property-card__price" data-field="price">R$ 439.000</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="property-card reveal" role="listitem" data-property-id="04">
+            <div class="property-card__media">
+              <div class="property-card__carousel" role="region" aria-label="Fotos do imóvel">
+                <div class="property-card__track">
+                  <figure class="property-card__slide"><div class="property-image-wrap"><img src="images/imoveis/imovel-04-foto-1.jpg" alt="Fachada — Casa Res. Prado" loading="lazy"></div></figure>
+                  <figure class="property-card__slide"><div class="property-image-wrap"><img src="images/imoveis/imovel-04-foto-2.jpg" alt="Garagem coberta — Casa Res. Prado" loading="lazy"></div></figure>
+                  <figure class="property-card__slide"><div class="property-image-wrap"><img src="images/imoveis/imovel-04-foto-3.jpg" alt="Entrada e jardim — Casa Res. Prado" loading="lazy"></div></figure>
+                  <figure class="property-card__slide"><div class="property-image-wrap"><img src="images/imoveis/imovel-04-foto-4.jpg" alt="Sala com pé direito alto — Casa Res. Prado" loading="lazy"></div></figure>
+                  <figure class="property-card__slide"><div class="property-image-wrap"><img src="images/imoveis/imovel-04-foto-5.jpg" alt="Banheiro da suíte — Casa Res. Prado" loading="lazy"></div></figure>
+                </div>
+              </div>
+              <div class="property-card__dots" role="tablist" aria-label="Navegação de fotos">
+                <button type="button" class="property-card__dot is-active" aria-label="Foto 1" aria-selected="true"></button>
+                <button type="button" class="property-card__dot" aria-label="Foto 2" aria-selected="false"></button>
+                <button type="button" class="property-card__dot" aria-label="Foto 3" aria-selected="false"></button>
+                <button type="button" class="property-card__dot" aria-label="Foto 4" aria-selected="false"></button>
+                <button type="button" class="property-card__dot" aria-label="Foto 5" aria-selected="false"></button>
+              </div>
+              <div class="property-card__overlay">
+                <div class="property-card__top">
+                  <div class="property-card__location">
+                    <span class="property-card__city" data-field="city">Senador Canedo</span>
+                    <span class="property-card__neighborhood" data-field="neighborhood">Res. Prado</span>
+                  </div>
+                </div>
+                <img src="images/logo-marcelo-antonio.png" alt="" class="property-card__mark" aria-hidden="true">
+                <div class="property-card__bottom">
+                  <p class="property-card__type" data-field="type">Casa nova alto padrão, suíte com closet e pé direito alto</p>
+                  <ul class="property-card__specs" aria-label="Dados do imóvel">
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="12" rx="1"/><path d="M8 8V5h8v3"/></svg>
+                      <span data-field="land">250 m²</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 9h16M9 4v16"/></svg>
+                      <span data-field="built">127 m²</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11h16v8H4z"/><path d="M7 11V7h10v4"/></svg>
+                      <span data-field="bedrooms">3 dorms</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14v7H5z"/><path d="M8 12V8h8v4"/></svg>
+                      <span data-field="suites">1 suíte</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14h16l-2 5H6z"/><circle cx="7.5" cy="19.5" r="1.5"/><circle cx="16.5" cy="19.5" r="1.5"/></svg>
+                      <span data-field="parking">3 vagas</span>
+                    </li>
+                  </ul>
+                  <p class="property-card__price" data-field="price">R$ 577.000</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!--
+          Template do card — duplique este bloco para cada imóvel:
+
+          <article class="property-card reveal" role="listitem" data-property-id="XX">
+            <div class="property-card__media">
+              <div class="property-card__carousel" role="region" aria-label="Fotos do imóvel">
+                <div class="property-card__track">
+                  <figure class="property-card__slide"><div class="property-image-wrap"><img src="images/imoveis/imovel-XX-foto-1.jpg" alt="Fachada — Tipo do imóvel" loading="lazy"></div></figure>
+                  <figure class="property-card__slide"><div class="property-image-wrap"><img src="images/imoveis/imovel-XX-foto-2.jpg" alt="Interior — Tipo do imóvel" loading="lazy"></div></figure>
+                  <figure class="property-card__slide"><div class="property-image-wrap"><img src="images/imoveis/imovel-XX-foto-3.jpg" alt="Área externa — Tipo do imóvel" loading="lazy"></div></figure>
+                </div>
+              </div>
+              <div class="property-card__dots" role="tablist" aria-label="Navegação de fotos">
+                <button type="button" class="property-card__dot is-active" aria-label="Foto 1" aria-selected="true"></button>
+                <button type="button" class="property-card__dot" aria-label="Foto 2" aria-selected="false"></button>
+                <button type="button" class="property-card__dot" aria-label="Foto 3" aria-selected="false"></button>
+              </div>
+              <div class="property-card__overlay">
+                <div class="property-card__top">
+                  <div class="property-card__location">
+                    <span class="property-card__city" data-field="city">Senador Canedo</span>
+                    <span class="property-card__neighborhood" data-field="neighborhood">Bairro</span>
+                  </div>
+                </div>
+                <img src="images/logo-marcelo-antonio.png" alt="" class="property-card__mark" aria-hidden="true">
+                <div class="property-card__bottom">
+                  <p class="property-card__type" data-field="type">Tipo do imóvel</p>
+                  <ul class="property-card__specs" aria-label="Dados do imóvel">
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="12" rx="1"/><path d="M8 8V5h8v3"/></svg>
+                      <span data-field="land">000 m²</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 9h16M9 4v16"/></svg>
+                      <span data-field="built">000 m²</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11h16v8H4z"/><path d="M7 11V7h10v4"/></svg>
+                      <span data-field="bedrooms">0 dorms</span>
+                    </li>
+                    <li class="property-card__spec">
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14v7H5z"/><path d="M8 12V8h8v4"/></svg>
+                      <span data-field="suites">0 suítes</span>
+                    </li>
+                    <li class="property-card__spec" hidden>
+                      <svg class="property-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14h16l-2 5H6z"/><circle cx="7.5" cy="19.5" r="1.5"/><circle cx="16.5" cy="19.5" r="1.5"/></svg>
+                      <span data-field="parking">0 vagas</span>
+                    </li>
+                  </ul>
+                  <p class="property-card__price" data-field="price">R$ 000.000</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          -->
+
+        </div>
+
+        <div class="listings-catalog">
+          <a href="https://www.whatsapp.com/catalog/556295747746/?app_absent=0&utm_source=ig" class="listings-catalog__btn" target="_blank" rel="noopener noreferrer">Ver catálogo completo</a>
+        </div>
+
+        <p class="body-text body-text--narrow editorial-caption">Não existem duas iguais. Cada residência que carrega a assinatura Marcelo Antonio passa por uma curadoria exigente — porque padrão alto não se declara, se comprova em cada detalhe.</p>
+      </div>
+    </section>
+
+    <!-- 7. Galeria -->
+    <section class="section section--gallery" id="galeria" aria-labelledby="titulo-galeria">
+      <div class="section-inner section-inner--gallery">
+        <header class="gallery-header">
+          <p class="eyebrow">Registro</p>
+          <h2 class="section-title" id="titulo-galeria">Antes de morar,<br>é preciso sentir</h2>
+        </header>
+        <p class="body-text gallery-intro">Imagens reais. Momentos reais. Cada entrega é a prova de que o processo funciona.</p>
+        <div class="gallery-grid-wrap">
+          <div class="gallery-grid" role="list" aria-label="Registros da residência">
+            <div class="gallery-slot reveal" role="listitem">
+              <img src="images/gallery/galeria-1.jpg" alt="Brinde ao ar livre na área externa da residência" loading="lazy">
+            </div>
+            <div class="gallery-slot reveal" role="listitem">
+              <img src="images/gallery/galeria-2.jpg" alt="Celebração na área gourmet da residência" loading="lazy">
+            </div>
+            <div class="gallery-slot reveal" role="listitem">
+              <img src="images/gallery/galeria-3.jpg" alt="Brinde noturno no pátio da casa" loading="lazy">
+            </div>
+            <div class="gallery-slot reveal" role="listitem">
+              <img src="images/gallery/galeria-4.jpg" alt="Momento de celebração no jardim" loading="lazy">
+            </div>
+            <div class="gallery-slot reveal" role="listitem">
+              <img src="images/gallery/galeria-5.jpg" alt="Entrega das chaves e presente na residência" loading="lazy">
+            </div>
+            <div class="gallery-slot reveal" role="listitem">
+              <img src="images/gallery/galeria-6.jpg" alt="Família recebendo as chaves na entrada da casa" loading="lazy">
+            </div>
+            <div class="gallery-slot reveal" role="listitem">
+              <img src="images/gallery/galeria-7.jpg" alt="Assinatura e entrega na cozinha da residência" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Apresentação do corretor -->
+    <section class="section section--broker" id="corretor" aria-labelledby="titulo-corretor">
+      <div class="section-inner section-inner--broker">
+        <div class="broker-profile reveal">
+          <div class="broker-photo">
+            <div class="broker-photo__frame">
+              <img src="images/corretor/marcelo.png" alt="Marcelo Antonio — Corretor Marcelo Antonio Imóveis" class="broker-photo__image" width="320" height="320">
+            </div>
+          </div>
+          <div class="broker-copy">
+            <p class="eyebrow">Quem conduz Marcelo Antonio Imóveis</p>
+            <h2 class="section-title section-title--broker" id="titulo-corretor">Marcelo Antonio</h2>
+            <p class="broker-creci">CRECI 40.309</p>
+            <p class="body-text broker-bio">Corretor de imóveis com atuação em Senador Canedo e região, Marcelo conduz cada negociação com proximidade, transparência e foco no que realmente importa: encontrar a casa certa para cada família. Em Marcelo Antonio Imóveis, o atendimento é direto — sem intermediários, sem ruído.</p>
+          </div>
+        </div>
+
+        <ul class="broker-pillars" aria-label="Diferenciais de atendimento">
+          <li class="broker-pillar reveal">
+            <span class="broker-pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </span>
+            <p class="broker-pillar__text">Atendimento direto e personalizado</p>
+          </li>
+          <li class="broker-pillar reveal">
+            <span class="broker-pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+            </span>
+            <p class="broker-pillar__text">Alta qualidade na apresentação dos imóveis, com fotos e registros exclusivos</p>
+          </li>
+          <li class="broker-pillar reveal">
+            <span class="broker-pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01"/><path d="M9 12v.01"/><path d="M9 15v.01"/><path d="M9 18v.01"/></svg>
+            </span>
+            <p class="broker-pillar__text">Atuação focada em imóveis de alto padrão e casas em condomínio</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 9. Equipe -->
+    <section class="section section--team" id="equipe" aria-labelledby="titulo-equipe">
+      <div class="section-inner section-inner--team">
+        <header class="team-header">
+          <h2 class="section-title" id="titulo-equipe">Nossa equipe</h2>
+          <p class="body-text team-intro">Corretores dedicados, com atendimento próximo e foco em encontrar o imóvel certo para cada família.</p>
+        </header>
+
+        <div class="team-grid">
+          <article class="team-member reveal">
+            <div class="team-member__photo">
+              <img
+                src="images/equipe/niedja-delmondes.png"
+                alt="Niedja Delmondes — Corretora Marcelo Antonio Imóveis"
+                class="team-member__image"
+                width="220"
+                height="220"
+                loading="lazy"
+              >
+            </div>
+            <h3 class="team-member__name">Niedja Delmondes</h3>
+            <p class="team-member__creci">CRECI 48.686</p>
+            <p class="team-member__bio">Corretora de imóveis em Senador Canedo, Niedja une sensibilidade e objetividade para conduzir cada cliente com clareza — do primeiro contato à entrega das chaves. Atuação focada em residências de alto padrão, com atendimento acolhedor, transparente e no ritmo de cada família.</p>
+            <a
+              href="https://wa.me/5562992398271"
+              class="team-member__whatsapp"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp de Niedja Delmondes"
+            >
+              <svg class="team-member__whatsapp-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.435 9.884-9.884 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+              </svg>
+              (62) 9 9239-8271
+            </a>
+          </article>
+
+          <article class="team-member reveal">
+            <div class="team-member__photo">
+              <img
+                src="images/equipe/christian-henrique.png"
+                alt="Christian Henrique — Corretor Marcelo Antonio Imóveis"
+                class="team-member__image"
+                width="220"
+                height="220"
+                loading="lazy"
+              >
+            </div>
+            <h3 class="team-member__name">Christian Henrique</h3>
+            <p class="team-member__creci">CRECI 48.604</p>
+            <p class="team-member__bio">Corretor de imóveis em Senador Canedo, Christian conduz cada negociação guiado pelos mesmos valores que orientam sua vida: família, fé, ética e transparência. Para ele, encontrar um imóvel é realizar um sonho — e isso exige escuta, cuidado e compromisso do primeiro contato à entrega das chaves.</p>
+            <a
+              href="https://wa.me/5562994792289"
+              class="team-member__whatsapp"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp de Christian Henrique"
+            >
+              <svg class="team-member__whatsapp-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.435 9.884-9.884 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+              </svg>
+              (62) 9 9479-2289
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Contato final — centralizada -->
+    <section class="section section--contact" id="contato" aria-labelledby="titulo-contato">
+      <div class="section-inner section-inner--contact reveal">
+        <header class="contact-header">
+          <p class="eyebrow">Um convite</p>
+          <h2 class="section-title" id="titulo-contato">Se reconheceu,<br>converse conosco</h2>
+        </header>
+        <p class="body-text contact-intro">Uma casa não se escolhe com pressa. Se algo aqui fez sentido, fale conosco — atendimento direto, no seu tempo, em Senador Canedo.</p>
+        <address class="contact-details">
+          <a href="https://wa.me/message/KKXJ743HWVUOE1" class="contact-link">WhatsApp Marcelo Antonio Imóveis</a>
+          <a href="tel:+556295747746" class="contact-link">(62) 9 9574-7746</a>
+        </address>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a href="#topo" class="footer-logo" aria-label="Marcelo Antonio Imóveis — Voltar ao topo">
+        <img src="images/logo-marcelo-antonio.png" alt="" class="footer-logo-img" width="72" height="72">
+      </a>
+      <p class="footer-text">&copy; 2026 Marcelo Antonio Imóveis — Senador Canedo</p>
+    </div>
+  </footer>
+
+  <a
+    href="https://wa.me/5562995747746"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Fale conosco pelo WhatsApp"
+  >
+    <span class="whatsapp-float__pulse" aria-hidden="true"></span>
+    <svg class="whatsapp-float__icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.435 9.884-9.884 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="js/main.js"></script>
+  <script src="js/property-carousel.js"></script>
+  <script src="js/video-scroll.js?v=3"></script>
+  <script src="js/scroll-effects.js"></script>
+</body>
+</html>
